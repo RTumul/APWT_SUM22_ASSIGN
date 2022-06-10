@@ -12,10 +12,7 @@
         <td>{{$cus -> id}}</td>
         <td>{{$cus -> name}}</td>
         <td>
-          <form method="post" action="">
-            @csrf
-            <input type="submit" value="view">
-          </form>
+          <button><a href="/customer/details/{{$cus -> id}}">View</a></button>
         </td>
       </tr>
       @endforeach

@@ -24,3 +24,4 @@ Route::get('/customer/login', [loginController::class,'login'])->name('customer.
 Route::post('/customer/login', [loginController::class,'loginAuth']);
 Route::get('/customer/dashboard', [customerController::class,'dashboard'])->name('customer.dashboard');
 Route::get('/admin/dashboard',[adminController::class,'dashboard'])->name("admin.dashboard");
+Route::get('/customer/details/{id}',[customerController::class,'details'])->name('customer.details');

@@ -8,6 +8,8 @@
         <th>Name</th>
         <th>Date of Birth</th>
         <th>Eamil</th>
+        <th>User Type</th>
+
         <th colspan="3">Actions</th>
       </tr>
       @foreach ($customers as $cus)
@@ -16,6 +18,7 @@
         <td>{{$cus -> name}}</td>
         <td>{{$cus -> dob}}</td>
         <td>{{$cus -> email}}</td>
+        <td>{{$cus -> type}}</td>
 
         <td><button>View<button></td>
         <td><button>Edit<button></td>

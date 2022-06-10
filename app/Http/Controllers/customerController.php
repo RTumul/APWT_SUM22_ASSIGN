@@ -45,6 +45,16 @@ class customerController extends Controller
         return view('customer.dashboard')->with('customers', $customers);
     }
 
+    public function details($id){
+        
+        $customers = customer::find($id);
+        return view('customer.details', [
+            'customers' => $customers
+        ]);
+
+        
+    }
+
 
     
     
